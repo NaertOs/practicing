@@ -12,37 +12,26 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-            /*
-            //Задание №1
-            Console.WriteLine("Приветствую! Введите свое имя");
-            string Name;
-            Name = Console.ReadLine();
-            Console.WriteLine("Введите свою фамилию");
-            string SecName;
-            SecName = Console.ReadLine();
-            Console.WriteLine("Добро пожаловать, "+SecName+" "+Name);
-            Console.ReadKey();
-            //Конец задания №1
-            //Задание №1 часть 2
-            string FName, SName;
-            FName = Interaction.InputBox("Введите свое имя", "Ввод данных");
-            SName = Interaction.InputBox("Введите свою фамилию", "Ввод данных");
-            MessageBox.Show("Добро пожаловать, "+SName+" "+FName+"!", "Welcome", MessageBoxButtons.OK,MessageBoxIcon.Information);    
-            //Задание №1 часть 2 конец
-            */
-            //-----------------------------------------------------------------Задание №2-------------------------------------------------
-            /*
-
-            Console.WriteLine("Приветствую! Введите свое имя");
-            string Name;
-            Name = Console.ReadLine();
-            Console.WriteLine("Введите свой возраст");
-            string age;
-            age = Console.ReadLine();
-            Console.WriteLine("Страдай, "+Name+", ибо тебе уже "+age);
+            //-----------------------------------------------------------------Задание №3, 4, 5 (1)-------------------------------------------------
+            Console.Title = "!=допрос";
+            Console.WriteLine("Приветствую! Введите день своего рождения");
+            string bday;
+            bday= Console.ReadLine();
+            string bmounth;
+            Console.WriteLine("Введите месяц своего рождения");
+            bmounth = Console.ReadLine();
+            string byear, today;
+            Console.WriteLine("Введите год своего рождения");
+            byear = Console.ReadLine();
+            //---------- Текущая дата----------
+            today = DateTime.Now.ToString("dd.mm.yyy");
+            int sub;
+            Console.WriteLine("Сегодня \n"+today);
+            Console.WriteLine(" Ваш день рождения - " + bday + "." +bmounth + "." + byear+". Всего прошло дней: " + sub);
             Console.ReadKey();
             //--------------------------------------------------------------Конец задания №2--------------------------------------------
-            //-------------------------------------------------------------Задание №2 часть 2---------------------------------------------
+            /*
+            //-------------------------------------------------------------Задание №2 часть (2)---------------------------------------------
             string FName, SName;
             FName = Interaction.InputBox("Введите свое имя", "Ввод имени");
             SName = Interaction.InputBox("Введите свой возраст", "Ввод возраста");
